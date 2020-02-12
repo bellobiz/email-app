@@ -24,6 +24,10 @@ li {
   background-color: #434e52;
 }
 
+li.ml-auto {
+  margin-left: auto;
+}
+
 input:focus {
   outline-color: transparent;
 }
