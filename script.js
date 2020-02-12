@@ -24,5 +24,3 @@ const eventHandler = () => {
   send3.style.width = '160px';
   send3.style.display = 'block';
 };
-
-send.onclick = eventHandler;
