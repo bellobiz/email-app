@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+/*   --dracula: rgba(0, 0, 0, 0.8); */
+  background-color: rgba(0, 0, 0, 0.8);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  padding: 10px 2px;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style-type: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+li {
+  padding: 10px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  background-color: #434e52;
+}
+
+input:focus {
+  outline-color: transparent;
+}
+
+input[type="text"] {
+  display: block;
+  width: 100%;
+  border: 1px solid #999;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  position: relative;
+  margin-left: 3%;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+}
+
+i.fas.fa-reply, i.fas.fa-file {
+  color: #999;
+}
+
+section {
+  margin-top: 20px
+}
+
+label {
+  color: #999;
+  position: relative;
+  top: 5px;
+  z-index: 1000;
+  margin-left: 3%
+}
+
+input[id="text"] {
+  font-size: 1.2em;
+  overflow: hidden;
+  border-bottom: none;
+  margin-top: 20px
+}
+
+label[for="signature"] {
+  margin-left: 60%
+}
+
+.span1, .span2, .span3 {
+  font-size: 1.2em;
+  border-left: 30px solid transparent;
+  color: #fff;
+  position: relative;
+  top: -38px;
+  display: none;
+}
+
+span.subject {
+  font-size: 1.2em;
+  border-left: 30px solid transparent;
+  color: #fff;
+  position: relative;
+  left: 70px;
+  top: -38px
+}
+
+span.input {
+  font-size: 1.2em;
+  border-left: 30px solid transparent;
+  color: #fff;
+  position: relative;
+  top: -20px;
+}
+
+@media (max-width: 438px) {
+  label[for="signature"] {
+    margin-left: 3%;
+  }
+}
+
+@media (max-width: 320px) {
+  div {
+    display: inline-block;
+    width: 500px;
+    overflow: scroll;
+  }
+  input[type="text"] {
+    border: none;
+  }
+}
