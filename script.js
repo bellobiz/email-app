@@ -1,26 +1,135 @@
-const send1 = document.querySelector('.span1');
-const send2 = document.querySelector('.span2');
-const send3 = document.querySelector('.span3');
+body {
+  margin: 0;
+  padding: 0;
+  /*   --dracula: rgba(0, 0, 0, 0.8); */
+  background-color: rgba(0, 0, 0, 0.8);
+  font-family: 'Open Sans', sans-serif;
+}
 
-const eventHandler = () => {
-  send1.style.backgroundColor = 'blue';
-  send1.style.borderRadius = '4px';
-  send1.style.padding = '5px';
-  send1.style.width = '160px';
-  send1.style.display = 'block';
-  send1.style.left = '80px';
-  
-  send2.style.backgroundColor = 'blue';
-  send2.style.borderRadius = '4px';
-  send2.style.padding = '5px';
-  send2.style.left = '80px';
-  send2.style.display = 'block';
-  send2.style.width = '160px';
+ul {
+  padding: 10px 2px;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style-type: none;
+  background-color: #444;
+  color: #fff;
+}
 
-  send3.style.backgroundColor = 'blue';
-  send3.style.borderRadius = '4px';
-  send3.style.padding = '5px';
-  send3.style.left = '80px';
-  send3.style.width = '160px';
-  send3.style.display = 'block';
-};
+li {
+  padding: 10px 20px;
+  border: 1px solid #535454;
+  border-radius: 4px;
+  background-color: #777;
+  cursor: pointer;
+  margin: 5px;
+}
+
+li.ml-auto {
+  margin-left: auto;
+}
+
+input:focus {
+  outline-color: transparent;
+}
+
+input[type="text"] {
+  display: block;
+  width: 100%;
+  border: 1px solid #999;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  position: relative;
+  margin-left: 3%;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+}
+
+i.fas.fa-reply,
+i.fas.fa-file {
+  color: #999;
+}
+
+section {
+  margin-top: 20px;
+}
+
+label {
+  color: #999;
+  position: relative;
+  top: 5px;
+  z-index: 1000;
+  margin-left: 3%;
+}
+
+input[id="text"] {
+  font-size: 1.2em;
+  overflow: hidden;
+  border-bottom: none;
+  margin-top: 20px;
+}
+
+label[for="signature"] {
+  margin-left: 60%;
+}
+
+.button1,
+.button2,
+.button3 {
+  position: relative;
+  top: -47px;
+  left: 10%;
+  background-color: rgb(59, 79, 134);
+  border-radius: 4px;
+  border: 4px solid rgb(59, 79, 134);
+  color: #fff;
+  padding: 3px;
+  visibility: hidden;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+.button3 {
+  left: 12%;
+}
+
+button:focus {
+  outline-color: transparent;
+}
+
+span.subject {
+  font-size: 1.2em;
+  border-left: 30px solid transparent;
+  color: #fff;
+  position: relative;
+  left: 70px;
+  top: -38px;
+}
+
+span.input {
+  font-size: 1.2em;
+  border-left: 30px solid transparent;
+  color: #fff;
+  position: relative;
+  top: -20px;
+}
+
+@media (max-width: 438px) {
+  label[for="signature"] {
+    margin-left: 3%;
+  }
+}
+
+@media (max-width: 320px) {
+  div {
+    display: inline-block;
+    width: 500px;
+    overflow: scroll;
+  }
+  input[type="text"] {
+    border: none;
+  }
+}
