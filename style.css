@@ -116,3 +116,20 @@ span.input {
   position: relative;
   top: -20px;
 }
+
+@media (max-width: 438px) {
+  label[for="signature"] {
+    margin-left: 3%;
+  }
+}
+
+@media (max-width: 320px) {
+  div {
+    display: inline-block;
+    width: 500px;
+    overflow: scroll;
+  }
+  input[type="text"] {
+    border: none;
+  }
+}
