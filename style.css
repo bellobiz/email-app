@@ -137,3 +137,10 @@ span.input {
     border: none;
   }
 }
+
+@media (max-width: 466px) and (min-width: 439px) {
+  select {
+    margin-left: 61%;
+    margin-top: 1em;
+  }
+}
