@@ -109,6 +109,10 @@ span.subject {
   top: -43px;
 }
 
+select {
+  background-color: #444;
+}
+
 span.input {
   font-size: 1.2em;
   border-left: 30px solid transparent;
